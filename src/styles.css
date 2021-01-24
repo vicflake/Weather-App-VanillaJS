@@ -54,7 +54,7 @@ i.fa-search-location {
   background: #0f7070;
 }
 
-.btn-weather {
+.btn-weather, .btn-current {
   background-color: #fff;
   border: 1px solid #000;
   box-shadow: 1px 1px 10px #000;
@@ -68,6 +68,12 @@ i.fa-search-location {
   transition: all 150ms ease-in-out;
 }
 
+.btn-current:hover {
+  background: #7e7e7e;
+  color: #ffffff;
+  transition: all 150ms ease-in-out;
+}
+
 ::placeholder {
   color: #fff;
 }
@@ -75,7 +81,7 @@ i.fa-search-location {
 p.last-update {
   text-align: right;
   position: relative;
-  right: 25px;
+  right: 5px;
   font-size: 10px;
 }
 
