@@ -58,6 +58,9 @@ i.fa-search-location {
   outline: none;
   color: #fff;
 }
+.search-city::after {
+  color: #fff;
+}
 
 ::placeholder {
   color: #fff;
@@ -214,3 +217,4 @@ div.col {
 .icon-next {
   font-size: 15px;
 }
+
