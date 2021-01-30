@@ -54,6 +54,15 @@ i.fa-search-location {
   background: #0f7070;
 }
 
+.search-city:focus {
+  outline: none;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
 .btn-weather, .btn-current {
   background-color: #fff;
   border: 1px solid #000;
@@ -74,9 +83,6 @@ i.fa-search-location {
   transition: all 150ms ease-in-out;
 }
 
-::placeholder {
-  color: #fff;
-}
 
 p.last-update {
   text-align: right;
@@ -149,9 +155,30 @@ div.units {
   text-align: right;
 }
 
+div.units a {
+  color: #fff;
+}
+
+.units button {
+  color: #fff;
+  padding: 5px;
+  border: .5px solid #fff;
+  border-radius: 8px;
+  background-color:#013535 ;
+  box-shadow: 0 5px 10px #000;
+  transition: all 150ms ease-in;
+}
+
+.units button:hover{
+  transform: translateY(-2px);
+  background-color:#fff600;
+  color: #000;
+}
+
 .celsius,
 .farenheit {
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* MORE INFO CURRENT */
