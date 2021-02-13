@@ -23,9 +23,8 @@
     <div class="container">
       <!-- SEARCH ENGINE -->
       <form class="search-engine">
-        <!-- <i class="fas fa-search-location"></i> -->
         <input type="text" placeholder="Search city" class="search-city" />
-        <input type="submit" value="Get weather" class="btn-weather" />
+        <input type="submit" value="Search" class="btn-weather" />
         <input type="submit" value="Current" class="btn-current" />
       </form>
       <p class="last-update">
@@ -35,10 +34,6 @@
       <!-- CURRENT WEATHER -->
       <div class="date-container">
         <h1 class="location">
-          
-          <!-- <small class="country">
-            United Kingdom <i class="fas fa-map-marker-alt"></i
-          ></small> -->
         </h1>
       </div>
 
@@ -55,7 +50,7 @@
           </div>
         </div>
 
-        <i class="fas fa-cloud-showers-heavy current-icon"></i>
+        <img src="" alt="clear sky" id="icon">
 
         <h3 id="weather-desc">
           
@@ -64,7 +59,7 @@
       <div class="units">
         <button id="celsius">
           °C 
-        </button> |
+        </button>
         <button id="farenheit">
           °F
         </button>
@@ -84,61 +79,50 @@
       <hr />
 
       <!-- WEATHER NEXT 5 DAYS -->
-      <!-- <div class="row next-five">
-        <div class="col day-1">
+      <div class="row forecast">
+        <div class="col-sm">
           Tue
-          <div class="icon-next">
-            <i class="far fa-snowflake"></i>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="forecast-icon">
+          <div class="forecast-temperature">
+           <strong>2°</strong> 8°
           </div>
-          <span class="temp-next">
-            2°/8°
-          </span>
+        </div>
+        <div class="col-sm">
+          Tue
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="forecast-icon">
+          <div class="forecast-temperature">
+           <strong>2°</strong> 8°
+          </div>
+        </div>
+        <div class="col-sm">
+          Tue
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="forecast-icon">
+          <div class="forecast-temperature">
+           <strong>2°</strong> 8°
+          </div>
+        </div>
+        <div class="col-sm">
+          Tue
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="forecast-icon">
+          <div class="forecast-temperature">
+           <strong>2°</strong> 8°
+          </div>
+        </div>
+        <div class="col-sm">
+          Tue
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="forecast-icon">
+          <div class="forecast-temperature">
+           <strong>2°</strong> 8°
+          </div>
         </div>
 
-        <div class="col day-">
-          Wed
-          <div class="icon-next">
-            <i class="fas fa-cloud-sun-rain"></i>
-          </div>
-          <span class="temp-next">
-            2°/8°
-          </span>
-        </div>
 
-        <div class="col day-3">
-          Thu
-          <div class="icon-next">
-            <i class="fas fa-cloud"></i>
-          </div>
-          <span class="temp-next">
-            2°/8°
-          </span>
-        </div>
-
-        <div class="col day-4">
-          Fri
-          <div class="icon-next">
-            <i class="fas fa-cloud-showers-heavy"></i>
-          </div>
-          <span class="temp-next">
-            2°/8°
-          </span>
-        </div>
-
-        <div class="col day-5">
-          Sat
-          <div class="icon-next">
-            <i class="fas fa-wind"></i>
-          </div>
-          <span class="temp-next">
-            2°/8°
-          </span> -->
-        </div>
+      
       </div>
     </div>
     <footer>
       <p>
-        <a href="https://github.com/vicflake/Weather-App-" target="_blank">Open-sourced </a>by Victoria Moreno
+        <a href="https://github.com/vicflake/Weather-App-" target="_blank">Open-source code </a>by Victoria Moreno
         </a>
         <br />
         <span

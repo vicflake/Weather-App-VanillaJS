@@ -44,11 +44,11 @@ function getWeather(event) {
 
 
 function showTemperature(response){
-  console.log(response);
       document.querySelector("h1").innerHTML = response.data.name;
       let temperature = document.querySelector("div.degrees");
       let tempCurrent = Math.round(response.data.main.temp);
       temperature.innerHTML = `${tempCurrent}°C`;
+      let iconElement = document.querySelector("#icon");
       
 
       document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -56,6 +56,9 @@ function showTemperature(response){
       document.querySelector("#weather-desc").innerHTML = response.data.weather[0].description;
       document.querySelector("#low-temp").innerHTML = Math.round(response.data.main.temp_min);
       document.querySelector("#high-temp").innerHTML = Math.round(response.data.main.temp_max);
+      iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+      iconElement.setAttribute("alt", response.data.weather[0].description);
+
 
 
 function convertCelsius(event) {
@@ -97,6 +100,9 @@ let currentLocation = document.querySelector(".btn-current");
 currentLocation.addEventListener("click", getPosition);
 
 search("Madrid");
+
+// FORECAST
+
 
 
 

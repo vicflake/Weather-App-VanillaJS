@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url(../images/forest.jpg);
   background-position: center;
@@ -14,7 +20,7 @@ div.container {
   box-shadow: 1px 1px 10px #000;
   margin: 40px auto;
   max-width: 300px;
-  /* height: 450px; */
+  opacity: 0.8;
 }
 
 footer p {
@@ -36,13 +42,6 @@ form.search-engine {
   font-size: 11px;
   text-align: center;
   padding-top: 10px;
-}
-
-i.fa-search-location {
-  font-size: 15px;
-  margin: 0 auto;
-  position: relative;
-  top: 10px;
 }
 
 .search-city {
@@ -75,7 +74,7 @@ i.fa-search-location {
 }
 
 .btn-weather:hover {
-  background: #fff600;
+  background: #EA6E4B;
   color: #000;
   transition: all 150ms ease-in-out;
 }
@@ -90,7 +89,7 @@ i.fa-search-location {
 p.last-update {
   text-align: right;
   position: relative;
-  right: 5px;
+  right: 17px;
   font-size: 10px;
 }
 
@@ -135,17 +134,12 @@ div.day-weather {
   top: 40px;
 }
 
-i.current-icon {
-  font-size: 50px;
-  margin: 15px;
-  color: #fff600;
+img#icon {
+  width: 110px;
 }
 
-.fa-map-marker-alt {
-  font-size: 15px;
-}
 
-.current-icon:hover {
+#icon:hover {
   transform: scale(1.2) perspective(1500px) rotateX(2deg);
   transition: all 150ms ease;
   cursor: pointer;
@@ -174,7 +168,7 @@ div.units a {
 
 .units button:hover{
   transform: translateY(-2px);
-  background-color:#fff600;
+  background-color:#EA6E4B;
   color: #000;
 }
 
@@ -198,23 +192,19 @@ hr {
 
 /* WEATHER NEXT 5 DAYS */
 
-div.next-five {
+div.forecast {
   margin: 20px;
 }
 
-div.col {
-  border-right: 1px solid #fff;
-  margin: 1px;
+div.col-sm {
   text-align: center;
   font-size: 10px;
   padding: 0;
 }
 
-.col.day-5 {
-  border: none;
-}
-
-.icon-next {
-  font-size: 15px;
+img#forecast-icon{
+  display: block;
+  width: 40px;
+  text-align: center;
 }
 
