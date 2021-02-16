@@ -121,7 +121,7 @@ function convertFarenheit(event) {
   event.preventDefault();
   let tempFarenheit = document.querySelector("div.degrees");
   let farenheitTemp = `${tempCurrent}` * 9/5 + 32;
-  tempFarenheit.innerHTML = `${farenheitTemp}°F`;
+  tempFarenheit.innerHTML = `${Math.round(farenheitTemp)}°F`;
 }
 
 let farenheitUnits = document.querySelector("#farenheit");

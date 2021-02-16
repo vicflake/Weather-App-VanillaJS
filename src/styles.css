@@ -7,12 +7,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #000;
+  font-weight: 600;
   margin: 0;
 }
 
 div.container {
-  background: linear-gradient(to bottom, #0f7070 10%, #002323 90%);
+  background: #A1FFCE;  
+  background: -webkit-linear-gradient(to bottom, #faffd180, #3b6f54bb);  
+  background: linear-gradient(to bottom, #faffd156, #3b6f54bb); 
   border: 1px solid #002323;
   border-radius: 15px;
   box-shadow: 1px 1px 10px #000;
@@ -43,29 +46,29 @@ form.search-engine {
 
 .search-city {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
   position: relative;
   margin-left: 5px;
   top: 4px;
-  background: #0f7070;
+  background: transparent;
 }
 
 .search-city:focus {
   outline: none;
-  color: #fff;
+  color: #000;
 }
 .search-city::after {
-  color: #fff;
+  color: #000;
 }
 
 ::placeholder {
-  color: #fff;
+  color: #000;
 }
 
 .btn-weather, .btn-current {
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #000;
-  box-shadow: 1px 1px 10px #000;
+  box-shadow: 1px 2px 5px #000;
   padding: 5px 7px;
   border-radius: 8px;
 }
@@ -144,6 +147,7 @@ img#icon {
 
 #weather-desc{
   text-transform: capitalize;
+  font-weight: 450;
 }
 
 div.units {
@@ -158,12 +162,12 @@ div.units a {
 }
 
 .units button {
-  color: #fff;
+  color: #000;
   padding: 5px;
   border: .5px solid #fff;
   border-radius: 8px;
-  background-color:#013535 ;
-  box-shadow: 0 5px 10px #000;
+  background-color:transparent ;
+  box-shadow: 1px 5px 10px #000;
   transition: all 150ms ease-in;
 }
 
@@ -186,9 +190,8 @@ div.more-info {
 }
 
 hr {
-  max-width: 90%;
-  background: #fff;
-  margin: 10px 20px;
+  background: #000;
+  margin: 10px 10px;
 }
 
 /* WEATHER NEXT 5 DAYS */
@@ -207,6 +210,7 @@ div.weather-forecast {
   padding: 0;
   text-align: center;
   margin: 0 auto;
+  font-weight: 600;
 }
 
 .forecast-temperature {
